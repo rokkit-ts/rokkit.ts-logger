@@ -3,10 +3,11 @@ import { LogFormater, FormatOptions } from './logFormater'
 import { LoggingLevel } from '../logger'
 
 export class RokkitLogFormater extends LogFormater {
-  public format(data: unknown, options?: FormatOptions): string {
+  public format(data: unknown, options: FormatOptions): string {
     const message = {
+      level: LoggingLevel[options.loggingLevel],
       date: new Date().toISOString(),
-      component: options?.componentName ?? 'Rokkit.ts',
+      component: options.componentName,
       message: data
     }
     return this.changeColor(
