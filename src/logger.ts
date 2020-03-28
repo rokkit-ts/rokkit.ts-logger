@@ -1,5 +1,5 @@
-import { LogProvider } from './log-provider/LogProvider'
-import { LogFormater } from './log-formater/logFormater'
+import { LogProvider } from './log-provider'
+import { LogFormater } from './log-formater'
 
 export enum LoggingLevel {
   ERROR = 1,
