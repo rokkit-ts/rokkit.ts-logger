@@ -1,4 +1,4 @@
-import { LogProvider } from './LogProvider'
+import { LogProvider } from '.'
 
 export class StdLogProvider extends LogProvider {
   public writeMessage(message: string): void {
