@@ -41,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/rokkit-ts/rokkit.ts-logger/issues"
   },
-  "homepage": "https://rokkit.dev"
+  "homepage": "https://rokkit.dev",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
 }
