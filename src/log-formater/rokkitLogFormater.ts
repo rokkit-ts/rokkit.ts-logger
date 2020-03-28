@@ -9,7 +9,10 @@ export class RokkitLogFormater extends LogFormater {
       component: options?.componentName ?? 'Rokkit.ts',
       message: data
     }
-    return this.changeColor(`${JSON.stringify(message)}`, options?.loggingLevel)
+    return this.changeColor(
+      `${JSON.stringify(message)}\n`,
+      options?.loggingLevel
+    )
   }
 
   private changeColor(message: string, loggingLevel?: LoggingLevel): string {
