@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '10.16'
+jobs:
+  include:
+    - stage: unit-tests
+      name: Unit Tests
+      script: npm test
+    - stage: deploy
+      name: Deploy to NPM
+      script: npm run-script build
+      deploy:
+        provider: npm
+        edge: true
+        email: '$NPM_USER'
+        api_key: '$NPM_TOKEN'
+        on:
+          tags: true
+          repo: rokkit-ts/rokkit.ts-logger
+        skip_cleanup: true
