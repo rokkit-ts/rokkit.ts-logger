@@ -10,8 +10,8 @@ export enum LoggingLevel {
 
 export class Logger {
   private readonly componentName: string
-  private readonly logProvider: LogProvider
-  private readonly logFormater: LogFormater
+  private logProvider: LogProvider
+  private logFormater: LogFormater
   private loggingLevel: LoggingLevel = LoggingLevel.INFO
 
   constructor(
@@ -26,12 +26,30 @@ export class Logger {
     this.logFormater = logFormater
   }
 
+  public set LogProvider(logProvider: LogProvider) {
+    this.logProvider = logProvider
+  }
+
+  public get LogProvider() {
+    return this.logProvider
+  }
+
+  public set LogFormater(logFormater: LogFormater) {
+    this.logFormater = logFormater
+  }
+
+  public get LogFormater() {
+    return this.logFormater
+  }
+
   public set LoggingLevel(loggingLevel: LoggingLevel) {
     this.loggingLevel = loggingLevel
   }
+
   public get LoggingLevel() {
     return this.loggingLevel
   }
+
   public info(message: unknown) {
     this.writeMessageForLevel(
       message,
@@ -39,6 +57,7 @@ export class Logger {
       this.logProvider.writeMessage
     )
   }
+
   public debug(message: unknown) {
     this.writeMessageForLevel(
       message,
@@ -53,6 +72,7 @@ export class Logger {
       this.logProvider.writeError
     )
   }
+
   public error(message: unknown) {
     this.writeMessageForLevel(
       message,
