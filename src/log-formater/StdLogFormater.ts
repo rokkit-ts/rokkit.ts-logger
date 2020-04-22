@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { LogFormater, FormatOptions } from './logFormater'
+import { LogFormater, FormatOptions } from './LogFormater'
 import { LoggingLevel } from '..'
 
 export class StdLogFormater extends LogFormater {
@@ -7,7 +7,8 @@ export class StdLogFormater extends LogFormater {
     return this.changeColor(
       `${new Date().toISOString()}: ${LoggingLevel[options.loggingLevel]}: ${
         options.componentName
-      } > ${typeof data === 'object' ? JSON.stringify(data) : data}`
+      } > ${typeof data === 'object' ? JSON.stringify(data) : data}\n`,
+      options.loggingLevel
     )
   }
 

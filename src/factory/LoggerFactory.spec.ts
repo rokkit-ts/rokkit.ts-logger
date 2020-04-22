@@ -1,6 +1,6 @@
 import { LoggerFactory } from './LoggerFactory'
 import { StdLogProvider } from '../log-provider'
-import { LoggingLevel } from '../logger'
+import { LoggingLevel } from '../Logger'
 import { RokkitLogFormater } from '../log-formater'
 
 describe('LoggerFactory', () => {

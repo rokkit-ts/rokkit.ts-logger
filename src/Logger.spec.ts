@@ -1,4 +1,4 @@
-import { Logger, LoggingLevel } from './logger'
+import { Logger, LoggingLevel } from './Logger'
 import { RokkitLogFormater } from './log-formater'
 import { StdLogProvider } from './log-provider'
 

@@ -1,4 +1,4 @@
-import { LoggingLevel } from '../logger'
+import { LoggingLevel } from '../Logger'
 
 export interface FormatOptions {
   componentName: string

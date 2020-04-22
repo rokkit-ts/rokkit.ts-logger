@@ -1,2 +1,2 @@
-export * from './logProvider'
-export * from './stdLogProvider'
+export * from './LogProvider'
+export * from './StdLogProvider'

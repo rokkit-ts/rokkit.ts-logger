@@ -1,6 +1,6 @@
-import { FormatOptions } from './logFormater'
+import { FormatOptions } from './LogFormater'
 import { StdLogFormater } from './StdLogFormater'
-import { LoggingLevel } from '../logger'
+import { LoggingLevel } from '../Logger'
 
 describe('StdLogFormater', () => {
   it('should print string message as formated string', () => {

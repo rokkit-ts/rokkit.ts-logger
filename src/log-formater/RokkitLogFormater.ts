@@ -1,6 +1,6 @@
 import chalk from 'chalk'
-import { LogFormater, FormatOptions } from './logFormater'
-import { LoggingLevel } from '../logger'
+import { LogFormater, FormatOptions } from './LogFormater'
+import { LoggingLevel } from '../Logger'
 
 export class RokkitLogFormater extends LogFormater {
   public format(data: unknown, options: FormatOptions): string {
