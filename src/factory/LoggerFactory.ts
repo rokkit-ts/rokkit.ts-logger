@@ -3,9 +3,9 @@ import {
   LogProvider,
   StdLogProvider,
   Logger,
-  RokkitLogFormater,
   LogFormater
 } from '..'
+import { StdLogFormater } from '../log-formater'
 
 export interface LoggerOptions {
   loggingLevel?: LoggingLevel
@@ -16,7 +16,7 @@ export interface LoggerOptions {
 export class LoggerFactory {
   private static readonly globalLoggers: Logger[] = []
   private static logProvider: LogProvider = new StdLogProvider()
-  private static logFormater: LogFormater = new RokkitLogFormater()
+  private static logFormater: LogFormater = new StdLogFormater()
   private static loggingLevel = LoggingLevel.INFO
 
   private constructor() {}
