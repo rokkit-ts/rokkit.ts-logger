@@ -1,4 +1,4 @@
-import { StdLogProvider } from './stdLogProvider'
+import { StdLogProvider } from './StdLogProvider'
 
 describe('StdLogProvider', () => {
   it('should write a message to stdOut', () => {

@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import { LogFormater, FormatOptions } from './LogFormater'
-import { LoggingLevel } from '..'
+import { LoggingLevel } from '../Logger'
 
 export class StdLogFormater extends LogFormater {
   public format(data: unknown, options: FormatOptions): string {

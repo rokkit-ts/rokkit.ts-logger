@@ -5,7 +5,7 @@ import {
   Logger,
   LogFormater
 } from '..'
-import { StdLogFormater } from '../log-formater'
+import { RokkitLogFormater, StdLogFormater } from '../log-formater'
 
 export interface LoggerOptions {
   loggingLevel?: LoggingLevel

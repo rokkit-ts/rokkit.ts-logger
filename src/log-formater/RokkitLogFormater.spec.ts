@@ -1,5 +1,5 @@
-import { RokkitLogFormater } from './rokkitLogFormater'
-import { LoggingLevel } from '../logger'
+import { RokkitLogFormater } from './RokkitLogFormater'
+import { LoggingLevel } from '../Logger'
 
 describe('RokkitLogFormater', () => {
   it('should return correct formatted string', () => {

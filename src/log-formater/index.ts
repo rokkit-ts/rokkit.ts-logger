@@ -1,3 +1,3 @@
-export * from './LogFormater'
-export * from './RokkitLogFormater'
-export * from './StdLogFormater'
+export { LogFormater, FormatOptions } from './LogFormater'
+export { RokkitLogFormater } from './RokkitLogFormater'
+export { StdLogFormater } from './StdLogFormater'
