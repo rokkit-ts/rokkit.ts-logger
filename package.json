@@ -1,6 +1,6 @@
 {
   "name": "@rokkit.ts/logger",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Minimalistic logger for rokkit.ts",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
